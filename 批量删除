@@ -1,0 +1,8 @@
+var join = $(".check:checked").map(function () {
+    return $(this).val();
+}).get().join();
+
+//批删 获取多选框的值 把值存入'join' 返回String类型
+//对应SQL
+
+delete from table where id in (join);
