@@ -1,0 +1,6 @@
+@RequestMapping("/hi")
+	public String mayanchisay(String content) {
+		System.out.println(newsService+"=======");
+		return newsService.sayHi(content);
+	}
+}
